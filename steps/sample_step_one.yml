@@ -13,10 +13,26 @@ startFlow:
 trigger:
   type: user_message_to_head-of-rd
   flowNode:
-    do:
-    - actionId: bot_message
-      params:
-        person: head-of-rd
-        messages:
-        - text: "This is the first step of the quest"
-    - actionId: finish_step
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings: ["happy","glad"]:
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: Great to hear you feel that way!
+              delay: 1000
+        - actionId: finish_step
+			else:
+				do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: Please smile and try again!
+              delay: 1000
