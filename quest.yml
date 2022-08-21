@@ -1,0 +1,17 @@
+title: Sample
+description: The description of the quest
+summary: The summary of the quest
+slogan: The slogan
+duration: 1
+simulations:
+- sample_step_one
+- sample_step_two
+skills:
+- setup
+- communication
+messages:
+  questFinished:
+    person: head-of-rd
+    messages:
+    - text: "Great job on completing the quest!"
+      delay: 1000

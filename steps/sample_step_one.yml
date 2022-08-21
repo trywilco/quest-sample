@@ -1,0 +1,22 @@
+id: sample_step_one
+hints: []
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Hello"
+        delay: 2000
+      - text: "Welcome to step 1 of the quest"
+        delay: 1500
+trigger:
+  type: user_message_to_head-of-rd
+  flowNode:
+    do:
+    - actionId: bot_message
+      params:
+        person: head-of-rd
+        messages:
+        - text: "This is the first step of the quest"
+    - actionId: finish_step
