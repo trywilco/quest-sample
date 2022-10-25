@@ -19,8 +19,8 @@ trigger:
         params:
           text: "${userMessageText}"
           strings: 
-	  	- happy
-		- glad
+	  - happy
+	  - glad
       then:
         do:
         - actionId: bot_message
@@ -30,8 +30,8 @@ trigger:
             - text: Great to hear you feel that way!
               delay: 1000
         - actionId: finish_step
-			else:
-				do:
+      else:
+        do:
         - actionId: bot_message
           params:
             person: head-of-rd
