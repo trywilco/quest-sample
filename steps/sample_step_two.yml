@@ -9,7 +9,9 @@ startFlow:
       - text: "Welcome to step 2 of the quest"
         delay: 1500
 trigger:
-  type: user_message_to_head-of-rd
+  type: user_message
+  params:
+    person: keen
   flowNode:
     do:
     - actionId: bot_message
