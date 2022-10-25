@@ -18,7 +18,9 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings: ["happy","glad"]:
+          strings: 
+	  	- happy
+		- glad
       then:
         do:
         - actionId: bot_message
