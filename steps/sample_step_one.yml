@@ -4,7 +4,7 @@ startFlow:
   do:
   - actionId: bot_message
     params:
-      person: head-of-rd
+      person: keen
       messages:
       - text: "Hello"
         delay: 2000
@@ -25,7 +25,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: Great to hear you feel that way!
               delay: 1000
@@ -34,7 +34,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: Please smile and try again!
               delay: 1000
