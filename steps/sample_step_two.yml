@@ -4,7 +4,7 @@ startFlow:
   do:
   - actionId: bot_message
     params:
-      person: head-of-rd
+      person: keen
       messages:
       - text: "Welcome to step 2 of the quest"
         delay: 1500
@@ -14,7 +14,7 @@ trigger:
     do:
     - actionId: bot_message
       params:
-        person: head-of-rd
+        person: keen
         messages:
         - text: "This is the second step of the quest"
     - actionId: finish_step
