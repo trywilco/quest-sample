@@ -11,7 +11,9 @@ startFlow:
       - text: "Welcome to step 1 of the quest"
         delay: 1500
 trigger:
-  type: user_message_to_head-of-rd
+  type: user_message
+  params:
+    person: keen
   flowNode:
     if:
       conditions:
