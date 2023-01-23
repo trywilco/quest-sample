@@ -9,9 +9,3 @@ simulations:
 skills:
 - setup
 - communication
-messages:
-  questFinished:
-    person: head-of-rd
-    messages:
-    - text: "Great job on completing the quest!"
-      delay: 1000
